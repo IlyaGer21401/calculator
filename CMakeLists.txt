@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(Task_1)
+project(Calculator)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
@@ -14,8 +14,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(Task_1 main.cpp calculator.ui   calculatormainwindow.h calculate.cpp calculate.h)
-target_link_libraries(Task_1
+add_executable(Calculator main.cpp calculator.ui   calculatormainwindow.h calculate.cpp calculate.h)
+target_link_libraries(Calculator
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
